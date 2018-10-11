@@ -8,7 +8,11 @@ the new http function signature looks like this:
 
 ```javascript
 exports.handler = async function http(request) {
-  return {status:201, body:'<b>hello world</b>'}
+  return {
+    status: 201, 
+    type: 'text/html',
+    body:'<b>hello world</b>'
+  }
 }
 ```
 
